@@ -37,19 +37,19 @@ const LibsCssFiles = GetFilesArray('resources/assets/vendor/libs/**/*.css');
 const FontsScssFiles = GetFilesArray('resources/assets/vendor/fonts/!(_)*.scss');
 
 // Processing Window Assignment for Libs like jKanban, pdfMake
-function libsWindowAssignment() {
-  return {
-    name: 'libsWindowAssignment',
+// function libsWindowAssignment() {
+//   return {
+//     name: 'libsWindowAssignment',
 
-    transform(src, id) {
-      if (id.includes('jkanban.js')) {
-        return src.replace('this.jKanban', 'window.jKanban');
-      } else if (id.includes('vfs_fonts')) {
-        return src.replaceAll('this.pdfMake', 'window.pdfMake');
-      }
-    }
-  };
-}
+//     transform(src, id) {
+//       if (id.includes('jkanban.js')) {
+//         return src.replace('this.jKanban', 'window.jKanban');
+//       } else if (id.includes('vfs_fonts')) {
+//         return src.replaceAll('this.pdfMake', 'window.pdfMake');
+//       }
+//     }
+//   };
+// }
 
 export default defineConfig({
   plugins: [
@@ -70,6 +70,6 @@ export default defineConfig({
       refresh: true
     }),
     html(),
-    libsWindowAssignment()
+    // libsWindowAssignment()
   ]
 });
