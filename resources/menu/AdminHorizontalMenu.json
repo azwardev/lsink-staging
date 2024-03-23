@@ -1,0 +1,32 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "pages-home"
+    },
+    {
+      "name": "Permohonan",
+      "icon": "menu-icon tf-icons ti ti-files",
+      "slug": "permohonan",
+      "submenu": [
+        {
+          "url": "/permohonan/pengabstrakan-air",
+          "name": "Pengabstrakan Air",
+          "slug": "permohonan-pengabstrakanair"
+        },
+        {
+          "url": "/permohonan/badan-perairan",
+          "name": "Badan Perairan",
+          "slug": "permohonan-badanperairan"
+        },
+        {
+          "url": "/permohonan/pelepasan-efluen",
+          "name": "Pelepasan Efluen",
+          "slug": "permohonan-pelepasan-efluen"
+        }
+      ]
+    }
+  ]
+}
