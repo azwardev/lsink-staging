@@ -34,7 +34,7 @@ $configData = Helper::appClasses();
           </a>
         </div> --}}
         <!-- /Logo -->
-        <h3 class="mb-1">Selamat Datang ke LSANK</h3>
+        <h3 class="mb-1">Selamat Datang ke LSANKKKK</h3>
         <p class="mb-4">Hanya beberapa klik untuk log masuk ke dalam akaun</p>
 
         @if (session('status'))
